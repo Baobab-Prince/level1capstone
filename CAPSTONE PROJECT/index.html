@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaz's Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="https://www.worldwildlife.org/"
+          ><img src="images/CaptainPlanet.jpeg" class="logo"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>The Best Site<br /><span>On Earth!</span></h2>
+          <p>
+            This is a site where you can have access to useful apps that will
+            absolutely change your life for the better!
+          </p>
+
+          <div class="imgBox">
+            <img src="images/harpy.jpeg" class="harpy" />
+          </div>
+        </div>
+        <ul class="thumb">
+          <li>
+            <img
+              src="images/Quiz.png"
+              onclick="imgSlider('images/Quiz.png');changeBgColor('#1e1e')"
+            />
+            <a href="quiz.html">Quiz</a>
+          </li>
+          <li>
+            <img
+              src="images/TODO.png"
+              onclick="imgSlider('images/TODO.png');changeBgColor('#0062be')"
+            />
+            <a href="to-do.html">To Do List</a>
+          </li>
+          <li>
+            <img
+              src="images/clock.gif"
+              onclick="imgSlider('images/clock.gif');changeBgColor('#e60c2c')"
+            />
+            <a href="clock.html">Clock</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com"
+              ><img src="images/facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com"
+              ><img src="images/twitter.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><img src="images/instagram.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="footer-bottom">
+      &copy;chazcarothers.com | Designed by Chaz Carothers
+  </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector('.harpy').src = anything;
+      }
+      function changeBgColor(color) {
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>

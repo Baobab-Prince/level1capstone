@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.AboutMe {
+  margin: 2px;
+}
+
+.CHAZ {
+  border: 3px solid white;
+}
+
+header ul {
+  margin: 0px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 20px;
+}
+
+h2 {
+  margin: 20px;
+}
+
+ul {
+  margin: 25px;
+}
+
+ol {
+  margin: 25px;
+}
+
+.bubbles img {
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -310px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+  animation-delay: 6s;
+  width: 20px;
+}
+.bubbles img:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 5px 0;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+}
